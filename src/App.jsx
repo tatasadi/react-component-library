@@ -1,8 +1,13 @@
+import ButtonExample from "./components/Button/ButtonExample"
+import MenuExample from "./components/Menu/MenuExample"
+
 function App() {
   return (
-    <>
-      <h1>Hi</h1>
-    </>
+    <main>
+      <ButtonExample />
+      <hr />
+      <MenuExample />
+    </main>
   )
 }
 
