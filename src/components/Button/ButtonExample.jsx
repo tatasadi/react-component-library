@@ -1,13 +1,13 @@
 import Button from "./Button"
 export default function ButtonExample() {
   return (
-    <div className="button-example">
-      <Button size="sm">small</Button>
+    <div className="flex gap-4 items-center">
+      <Button size="sm">Small</Button>
       <Button>Normal</Button>
-      <Button size="lg">large</Button>
-      <Button variant="success">Normal</Button>
-      <Button variant="warning">Normal</Button>
-      <Button variant="danger">Normal</Button>
+      <Button size="lg">Large</Button>
+      <Button variant="success">Success</Button>
+      <Button variant="warning">Warning</Button>
+      <Button variant="danger">Danger</Button>
     </div>
   )
 }

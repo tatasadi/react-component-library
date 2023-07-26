@@ -1,5 +1,4 @@
 import classnames from "classnames"
-import "./Button.css"
 
 export default function Button({
   children,

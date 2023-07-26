@@ -1,7 +1,6 @@
 import { createContext, useState } from "react"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
-import "./Menu.css"
 
 const MenuContext = createContext()
 

@@ -5,7 +5,7 @@ function App() {
   return (
     <main>
       <ButtonExample />
-      <hr />
+      <hr className="my-10" />
       <MenuExample />
     </main>
   )
