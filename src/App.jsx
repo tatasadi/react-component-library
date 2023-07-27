@@ -1,6 +1,7 @@
 import ButtonExample from "./components/Button/ButtonExample"
 import MenuExample from "./components/Menu/MenuExample"
 import MenuWithToggleExample from "./components/MenuWithToggle/MenuWithToggleExample"
+import MenuWithUseToggleExample from "./components/MenuWithUseToggle/MenuWithUseToggleExample"
 import Star from "./components/Star"
 import StarWithToggleDisplay from "./components/StarWithToggleDisplay"
 
@@ -18,7 +19,10 @@ function App() {
         />
       </div>
       <hr className="my-10" />
-      <MenuWithToggleExample />
+      <div className="flex gap-4">
+        <MenuWithToggleExample />
+        <MenuWithUseToggleExample />
+      </div>
     </main>
   )
 }
