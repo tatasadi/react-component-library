@@ -1,0 +1,17 @@
+import React from "react"
+import MenuWithToggle from "./index"
+
+export default function MenuWithToggleExample() {
+  const menu = ["Home", "About", "Contact", "Blog"]
+
+  return (
+    <MenuWithToggle>
+      <MenuWithToggle.Button>Menu</MenuWithToggle.Button>
+      <MenuWithToggle.Dropdown>
+        {menu.map((item) => (
+          <MenuWithToggle.Item key={item}>{item}</MenuWithToggle.Item>
+        ))}
+      </MenuWithToggle.Dropdown>
+    </MenuWithToggle>
+  )
+}
