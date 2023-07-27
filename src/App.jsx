@@ -10,7 +10,7 @@ function App() {
       <hr className="my-10" />
       <MenuExample />
       <hr className="my-10" />
-      <Star />
+      <Star onChange={() => console.log("Star clicked!")} />
       <hr className="my-10" />
       <MenuWithToggleExample />
     </main>
