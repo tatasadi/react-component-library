@@ -2,6 +2,7 @@ import ButtonExample from "./components/Button/ButtonExample"
 import MenuExample from "./components/Menu/MenuExample"
 import MenuWithToggleExample from "./components/MenuWithToggle/MenuWithToggleExample"
 import Star from "./components/Star"
+import StarWithToggleDisplay from "./components/StarWithToggleDisplay"
 
 function App() {
   return (
@@ -10,7 +11,12 @@ function App() {
       <hr className="my-10" />
       <MenuExample />
       <hr className="my-10" />
-      <Star onChange={() => console.log("Star clicked!")} />
+      <div className="flex gap-4">
+        <Star onChange={() => console.log("Star clicked!")} />
+        <StarWithToggleDisplay
+          onChange={() => console.log("StarWithToggleDisplay clicked!")}
+        />
+      </div>
       <hr className="my-10" />
       <MenuWithToggleExample />
     </main>
