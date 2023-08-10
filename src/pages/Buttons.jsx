@@ -1,4 +1,4 @@
-import Button from "./Button"
+import Button from "../components/Button/Button"
 export default function ButtonExample() {
   return (
     <div className="flex gap-4 items-center">

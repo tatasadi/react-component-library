@@ -1,29 +1,20 @@
-import ButtonExample from "./components/Button/ButtonExample"
-import MenuExample from "./components/Menu/MenuExample"
-import MenuWithToggleExample from "./components/MenuWithToggle/MenuWithToggleExample"
-import MenuWithUseToggleExample from "./components/MenuWithUseToggle/MenuWithUseToggleExample"
-import Star from "./components/Star"
-import StarWithToggleDisplay from "./components/StarWithToggleDisplay"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Layout from "./components/Layout"
+import Buttons from "./pages/Buttons"
+import Menus from "./pages/menues/Menus"
+import Stars from "./pages/Stars"
 
 function App() {
   return (
-    <main>
-      <ButtonExample />
-      <hr className="my-10" />
-      <MenuExample />
-      <hr className="my-10" />
-      <div className="flex gap-4">
-        <Star onChange={() => console.log("Star clicked!")} />
-        <StarWithToggleDisplay
-          onChange={() => console.log("StarWithToggleDisplay clicked!")}
-        />
-      </div>
-      <hr className="my-10" />
-      <div className="flex gap-4">
-        <MenuWithToggleExample />
-        <MenuWithUseToggleExample />
-      </div>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="buttons" element={<Buttons />} />
+          <Route path="menus" element={<Menus />} />
+          <Route path="stars" element={<Stars />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

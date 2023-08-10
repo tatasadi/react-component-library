@@ -1,4 +1,4 @@
-import Menu from "./index"
+import Menu from "../../components/Menu/index"
 
 export default function MenuExample() {
   const sports = ["Tennis", "Pickleball", "Racquetball", "Squash"]

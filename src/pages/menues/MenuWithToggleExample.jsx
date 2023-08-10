@@ -1,5 +1,5 @@
 import React from "react"
-import MenuWithToggle from "./index"
+import MenuWithToggle from "../../components/MenuWithToggle/index"
 
 export default function MenuWithToggleExample() {
   const menu = ["Home", "About", "Contact", "Blog"]

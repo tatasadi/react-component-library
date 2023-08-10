@@ -1,5 +1,5 @@
 import React from "react"
-import MenuWithUseToggle from "./index"
+import MenuWithUseToggle from "../../components/MenuWithUseToggle/index"
 
 export default function MenuWithUseToggleExample() {
   return (
