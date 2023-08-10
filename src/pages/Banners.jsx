@@ -3,7 +3,7 @@ import Banner from '../components/Banner/Banner'
 
 export default function Banners() {
   return (
-    <div className='flex flex-col gap-2'>
+    <div className='flex flex-col gap-2 p-10'>
       <Banner variant="success" title="Congratulations!">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
       <Banner variant="warning" title="Attention">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>
       <Banner variant="error" title="There is a problem with your application">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.</Banner>

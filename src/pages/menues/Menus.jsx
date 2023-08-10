@@ -5,7 +5,7 @@ import MenuWithUseToggleExample from './MenuWithUseToggleExample'
 
 export default function Menus() {
   return (
-    <div className='flex gap-20'>
+    <div className='flex gap-20 p-10'>
       <MenuExample />
       <MenuWithToggleExample />
       <MenuWithUseToggleExample />

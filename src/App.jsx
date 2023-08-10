@@ -5,6 +5,7 @@ import Menus from "./pages/menues/Menus"
 import Stars from "./pages/Stars"
 import Badges from "./pages/Badges"
 import Banners from "./pages/Banners"
+import Cards from "./pages/Cards"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="stars" element={<Stars />} />
           <Route path="badges" element={<Badges />} />
           <Route path="Banners" element={<Banners />} />
+          <Route path="cards" element={<Cards />} />
         </Route>
       </Routes>
     </BrowserRouter>

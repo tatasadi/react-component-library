@@ -20,9 +20,10 @@ export default function Layout() {
           <NavItem to="stars">Stars</NavItem>
           <NavItem to="badges">Badges</NavItem>
           <NavItem to="banners">Banners</NavItem>
+          <NavItem to="cards">Cards</NavItem>
         </nav>
       </header>
-      <main className='p-10'>
+      <main>
         <Outlet />
       </main>
 

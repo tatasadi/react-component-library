@@ -3,7 +3,7 @@ import Badge from '../components/Badge/Badge'
 
 export default function Badges() {
   return (
-    <div className="flex flex-col gap-4 items-center">
+    <div className="flex flex-col gap-4 items-center p-10">
       <div className='flex gap-4'>
         <Badge variant="square" color="gray">Badge</Badge>
         <Badge variant="square" color="red">Badge</Badge>
