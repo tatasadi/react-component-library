@@ -3,6 +3,7 @@ import Layout from "./components/Layout"
 import Buttons from "./pages/Buttons"
 import Menus from "./pages/menues/Menus"
 import Stars from "./pages/Stars"
+import Badges from "./pages/Badges"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="buttons" element={<Buttons />} />
           <Route path="menus" element={<Menus />} />
           <Route path="stars" element={<Stars />} />
+          <Route path="badges" element={<Badges />} />
         </Route>
       </Routes>
     </BrowserRouter>

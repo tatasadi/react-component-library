@@ -1,35 +1,24 @@
 import React from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 
+function NavItem({ to, children }) {
+  return <NavLink
+    to={to}
+    className={({ isActive }) =>
+      isActive ? "font-bold" : ""
+    }
+  >{children}</NavLink>
+}
+
 export default function Layout() {
   return (
     <>
       <header className="bg-slate-700 text-slate-100 p-4 flex justify-between">
         <nav className="flex gap-4">
-          <NavLink
-            to="buttons"
-            className={({ isActive }) =>
-              isActive ? "font-bold" : ""
-            }
-          >
-            Buttons
-          </NavLink>
-          <NavLink
-            to="menus"
-            className={({ isActive }) =>
-              isActive ? "font-bold" : ""
-            }
-          >
-            Menus
-          </NavLink>
-          <NavLink
-            to="stars"
-            className={({ isActive }) =>
-              isActive ? "font-bold" : ""
-            }
-          >
-            Stars
-          </NavLink>
+          <NavItem to="buttons">Buttons</NavItem>
+          <NavItem to="menus">Menus</NavItem>
+          <NavItem to="stars">Stars</NavItem>
+          <NavItem to="badges">Badges</NavItem>
         </nav>
       </header>
       <main className='p-10'>

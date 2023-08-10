@@ -13,6 +13,19 @@ body {
   font-family: Inter;
 }
 
+h1 {
+  @apply text-3xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-lg;
+}
+input {
+  @apply p-2 rounded-md;
+}
+
 button {
   background-color: #e5e7eb;
   color: #4b5563;
@@ -94,4 +107,52 @@ button.button-danger {
 
 .menu-item:not(:last-child) {
   border-bottom: 1px solid #6b7280;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.125rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.badge-square {
+  border-radius: 0.25rem;
+}
+
+.badge-pill {
+  border-radius: 0.75rem;
+}
+
+.badge-gray {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.badge-red {
+  @apply bg-red-100 text-red-800;
+}
+
+.badge-yellow {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-green {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-blue {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.badge-indigo {
+  @apply bg-indigo-100 text-indigo-800;
+}
+
+.badge-purple {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.badge-pink {
+  @apply bg-pink-100 text-pink-800;
 }
